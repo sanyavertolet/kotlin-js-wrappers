@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="i18n-js">
+    <output-path>$PROJECT_DIR$/i18n/build/libs</output-path>
+    <root id="archive" name="i18n-js.jar">
+      <element id="module-output" name="jswrappers.i18n.jsMain" />
+    </root>
+  </artifact>
+</component>
