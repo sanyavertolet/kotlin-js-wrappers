@@ -1,5 +1,6 @@
 package com.sanyavertolet.jswrappers.i18n
 
+import com.sanyavertolet.jswrappers.i18n.resources.Resources
 import js.core.jso
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.SerialName
@@ -239,12 +240,24 @@ class I18nConfiguration {
     var maxParallelReads: Int = 10
 
     /**
-     * Configures the `resources` (translations) using a dynamic builder.
+     * Configures the `resources` (translations) using a dynamic object.
      *
-     * @param resourcesBuilder A lambda with a dynamic receiver to build the `resources` object.
+     * **Warning: no type checks provided with [rawResources], use [resources] when possible.**
+     *
+     * @param res a dynamic object that configures resources
      */
-    fun resources(resourcesBuilder: dynamic.() -> Unit) {
-        resources = jso(resourcesBuilder)
+    @Suppress("MemberVisibilityCanBePrivate")
+    fun rawResources(res: dynamic) {
+        resources = res
+    }
+
+    /**
+     * Configures the `resources` (translations) using [Resources] builder.
+     *
+     * @param resourcesBuilder A lambda with a [Resources] receiver to build the `resources` object.
+     */
+    fun resources(resourcesBuilder: Resources.() -> Unit) {
+        resources = Resources().apply(resourcesBuilder).getAsDynamic()
     }
 
     /**
@@ -306,6 +319,9 @@ class I18nConfiguration {
         if (detection != undefined) {
             configurationAsDynamic["detection"] = detection
         }
+
+        console.log(configurationAsDynamic)
+
         return configurationAsDynamic
     }
 }
