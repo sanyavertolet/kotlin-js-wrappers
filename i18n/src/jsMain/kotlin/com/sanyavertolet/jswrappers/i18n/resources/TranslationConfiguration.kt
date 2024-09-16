@@ -9,7 +9,6 @@ import js.core.jso
  * and to group translations hierarchically using nested scopes.
  */
 class TranslationConfiguration internal constructor() {
-
     /**
      * Internal map holding direct translation key-value pairs.
      */
@@ -38,11 +37,11 @@ class TranslationConfiguration internal constructor() {
     /**
      * Adds a translation key-value pair to the current scope.
      *
-     * @param key The translation key.
-     * @param value The translated string.
+     * @receiver The translation key.
+     * @param translationString The translated string.
      */
-    fun translation(key: String, value: String) {
-        translations[key] = value
+    infix fun String.means(translationString: String) {
+        translations[this] = translationString
     }
 
     /**

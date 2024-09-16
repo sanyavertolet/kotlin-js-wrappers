@@ -9,7 +9,6 @@ import js.core.jso
  * for a particular language using a Kotlin DSL.
  */
 class LanguageConfiguration internal constructor() {
-
     /**
      * Internal map holding namespace names and their corresponding translations.
      */

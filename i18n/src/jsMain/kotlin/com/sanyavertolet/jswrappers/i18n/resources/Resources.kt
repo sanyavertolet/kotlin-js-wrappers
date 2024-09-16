@@ -6,7 +6,7 @@ package com.sanyavertolet.jswrappers.i18n.resources
 import js.core.jso
 
 /**
- * Represents the resources configuration for i18next.
+ * Represents the `resources` configuration for `i18next`.
  *
  * This class allows you to define translations for multiple languages
  * and their respective namespaces using a Kotlin DSL.
@@ -30,7 +30,7 @@ class Resources internal constructor() {
     /**
      * Converts the resources configuration into a dynamic object.
      *
-     * This dynamic object can be passed to the JavaScript i18next `init` function.
+     * This dynamic object can be passed to the JavaScript `i18next` `init` function.
      *
      * @return A dynamic object representing the resources.
      */

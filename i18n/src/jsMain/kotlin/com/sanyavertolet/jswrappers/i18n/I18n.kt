@@ -1,5 +1,5 @@
 /**
- * File containing a new way of initialization of i18next
+ * File containing a new way of initialization of `i18next`
  */
 
 package com.sanyavertolet.jswrappers.i18n
@@ -34,9 +34,9 @@ external class I18n {
     fun changeLanguage(language: String)
 
     /**
-     * Uses a plugin or module with the i18next instance.
+     * Uses a plugin or module with the `i18next` instance.
      *
-     * @param module The module to integrate with i18next.
+     * @param module The module to integrate with `i18next`.
      * @return The [I18n] instance for chaining.
      */
     fun use(module: dynamic): I18n
@@ -66,7 +66,7 @@ external class I18n {
     fun hasLoadedNamespace(namespace: String): Boolean
 
     /**
-     * Initializes the i18next instance with the given configuration.
+     * Initializes the `i18next` instance with the given configuration.
      *
      * **Deprecated:** Use [init] instead for type-safe configuration.
      *
