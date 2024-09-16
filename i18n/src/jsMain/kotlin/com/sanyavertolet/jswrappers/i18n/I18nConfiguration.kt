@@ -15,7 +15,7 @@ import kotlin.reflect.createInstance
  * Configuration class for `i18next` initialization.
  *
  * This class encapsulates all the configuration options available
- * for initializing i18next in a Kotlin/JS environment.
+ * for initializing `i18next` in a Kotlin/JS environment.
  *
  * It uses `kotlinx-serialization` to serialize the configuration into a
  * dynamic object that can be passed to the JavaScript `init` function.

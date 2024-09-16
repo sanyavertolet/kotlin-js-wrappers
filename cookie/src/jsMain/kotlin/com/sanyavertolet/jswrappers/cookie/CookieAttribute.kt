@@ -5,6 +5,7 @@ package com.sanyavertolet.jswrappers.cookie
  *
  * @see <a href=https://github.com/js-cookie/js-cookie>Documentation on GitHub</a>
  */
+@Suppress("unused")
 external interface CookieAttribute {
     /**
      * A [String] indicating the path where the cookie is visible.

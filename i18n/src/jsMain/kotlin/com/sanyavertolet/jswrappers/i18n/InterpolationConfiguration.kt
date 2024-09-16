@@ -202,7 +202,7 @@ class InterpolationConfiguration internal constructor() {
     }
 
     /**
-     * Converts the interpolation configuration into a dynamic object suitable for i18next initialization.
+     * Converts the interpolation configuration into a dynamic object suitable for `i18next` initialization.
      *
      * @return A dynamic object representing the interpolation configuration.
      */

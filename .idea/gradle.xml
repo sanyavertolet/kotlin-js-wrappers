@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/cookie" />
             <option value="$PROJECT_DIR$/i18n" />
+            <option value="$PROJECT_DIR$/i18n-backend-plugin" />
             <option value="$PROJECT_DIR$/playground" />
           </set>
         </option>

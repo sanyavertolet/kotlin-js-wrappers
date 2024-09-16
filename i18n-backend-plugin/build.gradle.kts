@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 repositories {
@@ -20,15 +21,17 @@ kotlin {
     sourceSets {
         jsMain {
             dependencies {
-                implementation(project.dependencies.enforcedPlatform(libs.kotlin.wrappers.bom))
+                implementation(projects.i18n)
 
+                implementation(project.dependencies.enforcedPlatform(libs.kotlin.wrappers.bom))
                 implementation("org.jetbrains.kotlin-wrappers:kotlin-extensions")
+
+                implementation(libs.kotlinx.serialization.json)
             }
         }
 
         jsTest {
             dependencies {
-                implementation(npm("js-cookie", "^3.0.5"))
                 implementation(kotlin("test"))
             }
         }
