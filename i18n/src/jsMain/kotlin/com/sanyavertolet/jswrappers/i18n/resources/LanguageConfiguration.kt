@@ -8,7 +8,7 @@ import js.core.jso
  * This class allows to define multiple namespaces and their translations
  * for a particular language using a Kotlin DSL.
  */
-class LanguageConfiguration {
+class LanguageConfiguration internal constructor() {
 
     /**
      * Internal map holding namespace names and their corresponding translations.

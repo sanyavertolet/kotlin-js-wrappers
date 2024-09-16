@@ -8,7 +8,7 @@ import js.core.jso
  * This class allows you to define individual translation key-value pairs
  * and to group translations hierarchically using nested scopes.
  */
-class TranslationConfiguration {
+class TranslationConfiguration internal constructor() {
 
     /**
      * Internal map holding direct translation key-value pairs.

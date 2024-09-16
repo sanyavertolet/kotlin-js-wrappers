@@ -11,8 +11,7 @@ import js.core.jso
  * This class allows you to define translations for multiple languages
  * and their respective namespaces using a Kotlin DSL.
  */
-class Resources {
-
+class Resources internal constructor() {
     /**
      * Internal map holding language codes and their configurations.
      */
