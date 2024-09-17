@@ -4,7 +4,7 @@
 
 package com.sanyavertolet.jswrappers.reactI18next
 
-import com.sanyavertolet.jswrappers.i18n.I18n
+import com.sanyavertolet.jswrappers.i18next.I18n
 
 /**
  * Dynamically imports the `react-i18next` module.

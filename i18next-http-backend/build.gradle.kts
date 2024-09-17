@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 repositories {
@@ -8,7 +9,13 @@ repositories {
 
 kotlin {
     js {
-        browser()
+        browser {
+            testTask {
+                useKarma {
+                    useChromeHeadless()
+                }
+            }
+        }
     }
 
     sourceSets {
@@ -18,7 +25,16 @@ kotlin {
 
                 implementation(project.dependencies.enforcedPlatform(libs.kotlin.wrappers.bom))
                 implementation("org.jetbrains.kotlin-wrappers:kotlin-extensions")
+
+                implementation(libs.kotlinx.serialization.json)
+            }
+        }
+
+        jsTest {
+            dependencies {
+                implementation(kotlin("test"))
             }
         }
     }
 }
+

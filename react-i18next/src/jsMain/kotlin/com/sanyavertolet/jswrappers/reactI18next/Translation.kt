@@ -1,8 +1,8 @@
 package com.sanyavertolet.jswrappers.reactI18next
 
-import com.sanyavertolet.jswrappers.i18n.I18n
-import com.sanyavertolet.jswrappers.i18n.TranslationFunction
-import com.sanyavertolet.jswrappers.i18n.TranslationFunctionWithReceiver
+import com.sanyavertolet.jswrappers.i18next.I18n
+import com.sanyavertolet.jswrappers.i18next.TranslationFunction
+import com.sanyavertolet.jswrappers.i18next.TranslationFunctionWithReceiver
 
 /**
  * Represents the return value of `useTranslation` hook
