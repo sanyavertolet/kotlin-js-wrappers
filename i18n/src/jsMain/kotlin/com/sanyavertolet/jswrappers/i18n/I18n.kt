@@ -15,6 +15,13 @@ import kotlin.js.Promise
 typealias TranslationFunction = (String) -> String
 
 /**
+ * Type alias for the translation function with String receiver.
+ *
+ * Represents an extension function that returns a translated [String].
+ */
+typealias TranslationFunctionWithReceiver = String.() -> String
+
+/**
  * Represents the `i18next` instance.
  *
  * This external class corresponds to the `i18next` JavaScript library's main object.
@@ -87,7 +94,7 @@ external class I18n {
  *
  * @return The [I18n] instance from the `i18next` library.
  */
-fun loadI18nModule(): I18n = require("i18next")
+fun requireI18next(): I18n = require("i18next")
 
 /**
  * Initializes the `i18next` instance with a type-safe configuration.

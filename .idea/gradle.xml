@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/i18n" />
             <option value="$PROJECT_DIR$/i18n-backend-plugin" />
             <option value="$PROJECT_DIR$/playground" />
+            <option value="$PROJECT_DIR$/react-i18next" />
           </set>
         </option>
       </GradleProjectSettings>
