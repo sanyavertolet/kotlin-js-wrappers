@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="react-i18next-js">
+    <output-path>$PROJECT_DIR$/react-i18next/build/libs</output-path>
+    <root id="archive" name="react-i18next-js.jar">
+      <element id="module-output" name="jswrappers.react-i18next.jsMain" />
+    </root>
+  </artifact>
+</component>

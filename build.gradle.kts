@@ -1,4 +1,4 @@
-group = "com.sanyavertolet.jswrappers"
+group = "io.github.sanyavertolet.jswrappers"
 version = "1.0-SNAPSHOT"
 
 plugins {
