@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="i18next-browser-languagedetector-js-0.1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/i18next-browser-languagedetector/build/libs</output-path>
+    <root id="archive" name="i18next-browser-languagedetector-js-0.1.0-SNAPSHOT.jar">
+      <element id="module-output" name="jswrappers.i18next-browser-languagedetector.jsMain" />
+    </root>
+  </artifact>
+</component>

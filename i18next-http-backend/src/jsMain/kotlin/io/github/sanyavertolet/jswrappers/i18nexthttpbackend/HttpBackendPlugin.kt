@@ -2,7 +2,7 @@
  * File containing a new way of initialization of `i18next-http-backend`
  */
 
-package io.github.sanyavertolet.jswrappers.i18nextHttpBackend
+package io.github.sanyavertolet.jswrappers.i18nexthttpbackend
 
 import io.github.sanyavertolet.jswrappers.i18next.I18n
 

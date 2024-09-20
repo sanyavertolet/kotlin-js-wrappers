@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="cookie-js-0.1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/cookie/build/libs</output-path>
+    <root id="archive" name="cookie-js-0.1.0-SNAPSHOT.jar">
+      <element id="module-output" name="jswrappers.cookie.jsMain" />
+    </root>
+  </artifact>
+</component>

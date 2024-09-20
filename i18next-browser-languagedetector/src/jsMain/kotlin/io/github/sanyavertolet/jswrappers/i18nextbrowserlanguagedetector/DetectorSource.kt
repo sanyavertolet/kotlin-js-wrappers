@@ -1,4 +1,4 @@
-package io.github.sanyavertolet.jswrappers.i18nextBrowserLanguageDetector
+package io.github.sanyavertolet.jswrappers.i18nextbrowserlanguagedetector
 
 import kotlinx.serialization.SerialName
 
@@ -11,44 +11,12 @@ import kotlinx.serialization.SerialName
 @Suppress("unused")
 enum class DetectorSource {
     /**
-     * Language detected from the URL query string parameter.
-     *
-     * Example: `?lng=en` would set the language to English.
-     */
-    @SerialName("querystring")
-    QUERYSTRING,
-
-    /**
      * Language detected from a cookie stored in the browser.
      *
      * The detector looks for a cookie that specifies the language preference.
      */
     @SerialName("cookie")
     COOKIE,
-
-    /**
-     * Language detected from the browser's local storage.
-     *
-     * The language preference is stored in the local storage of the browser.
-     */
-    @SerialName("localStorage")
-    LOCAL_STORAGE,
-
-    /**
-     * Language detected from the browser's session storage.
-     *
-     * Similar to local storage but data is cleared when the page session ends.
-     */
-    @SerialName("sessionStorage")
-    SESSION_STORAGE,
-
-    /**
-     * Language detected from the browser's navigator object.
-     *
-     * Uses the language settings of the user's browser.
-     */
-    @SerialName("navigator")
-    NAVIGATOR,
 
     /**
      * Language detected from the `lang` attribute of the `<html>` tag.
@@ -59,12 +27,44 @@ enum class DetectorSource {
     HTML_TAG,
 
     /**
+     * Language detected from the browser's local storage.
+     *
+     * The language preference is stored in the local storage of the browser.
+     */
+    @SerialName("localStorage")
+    LOCAL_STORAGE,
+
+    /**
+     * Language detected from the browser's navigator object.
+     *
+     * Uses the language settings of the user's browser.
+     */
+    @SerialName("navigator")
+    NAVIGATOR,
+
+    /**
      * Language detected from the URL path.
      *
      * Example: A URL like `http://example.com/en/page` would set the language to English.
      */
     @SerialName("path")
     PATH,
+
+    /**
+     * Language detected from the URL query string parameter.
+     *
+     * Example: `?lng=en` would set the language to English.
+     */
+    @SerialName("querystring")
+    QUERYSTRING,
+
+    /**
+     * Language detected from the browser's session storage.
+     *
+     * Similar to local storage but data is cleared when the page session ends.
+     */
+    @SerialName("sessionStorage")
+    SESSION_STORAGE,
 
     /**
      * Language detected from the subdomain of the URL.
@@ -76,7 +76,6 @@ enum class DetectorSource {
     ;
 
     companion object {
-
         /**
          * The default order in which the language detector will check the sources.
          *

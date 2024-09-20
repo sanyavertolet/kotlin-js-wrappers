@@ -229,6 +229,7 @@ class InterpolationConfiguration internal constructor() {
  *
  * @param translationConfiguration A lambda with receiver [TranslationConfiguration] to build the default variables.
  */
+@Suppress("EXTENSION_FUNCTION_WITH_CLASS")
 fun InterpolationConfiguration.defaultVariables(translationConfiguration: TranslationConfiguration.() -> Unit) {
     rawDefaultVariables(TranslationConfiguration().apply(translationConfiguration).getAsDynamic())
 }

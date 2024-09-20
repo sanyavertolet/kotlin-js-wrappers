@@ -2,7 +2,7 @@
 @file:JsModule("react-i18next")
 @file:JsNonModule
 
-package io.github.sanyavertolet.jswrappers.reactI18next
+package io.github.sanyavertolet.jswrappers.reacti18next
 
 /**
  * @param namespaces [Array] of namespaces to load

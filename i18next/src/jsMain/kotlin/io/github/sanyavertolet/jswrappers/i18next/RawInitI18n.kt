@@ -1,6 +1,6 @@
 /**
-* File containing an old way of initialization of `i18next`
-*/
+ * File containing an old way of initialization of `i18next`
+ */
 
 package io.github.sanyavertolet.jswrappers.i18next
 

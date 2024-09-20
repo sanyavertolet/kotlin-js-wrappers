@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
+
+    id("io.github.sanyavertolet.jswrappers.buildutils.code-quality-convention")
 }
 
 repositories {
@@ -34,4 +36,3 @@ kotlin {
         }
     }
 }
-

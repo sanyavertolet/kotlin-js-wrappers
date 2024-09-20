@@ -1,15 +1,18 @@
+@file:Suppress("EXTENSION_FUNCTION_WITH_CLASS")
+
 package io.github.sanyavertolet.jswrappers.i18next
 
 import io.github.sanyavertolet.jswrappers.i18next.plugins.BackendConfiguration
 import io.github.sanyavertolet.jswrappers.i18next.plugins.CacheConfiguration
 import io.github.sanyavertolet.jswrappers.i18next.plugins.DetectionConfiguration
 import io.github.sanyavertolet.jswrappers.i18next.resources.Resources
+
+import kotlin.reflect.createInstance
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
 import kotlinx.serialization.json.encodeToDynamic
-import kotlin.reflect.createInstance
 
 /**
  * Configuration class for `i18next` initialization.
@@ -52,6 +55,7 @@ class I18nConfiguration internal constructor() {
      *
      * Defaults to `null`.
      */
+    @Suppress("VARIABLE_NAME_INCORRECT_FORMAT")
     var appendNamespaceToCIMode: String? = null
 
     /**
@@ -384,8 +388,6 @@ class I18nConfiguration internal constructor() {
         if (detection != undefined) {
             configurationAsDynamic["detection"] = detection
         }
-
-        console.log(configurationAsDynamic)
 
         return configurationAsDynamic
     }

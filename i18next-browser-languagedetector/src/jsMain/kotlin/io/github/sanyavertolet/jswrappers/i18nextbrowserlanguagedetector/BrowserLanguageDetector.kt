@@ -2,7 +2,7 @@
  * File containing a new way of initialization of `i18next-browser-langaugedetector`
  */
 
-package io.github.sanyavertolet.jswrappers.i18nextBrowserLanguageDetector
+package io.github.sanyavertolet.jswrappers.i18nextbrowserlanguagedetector
 
 import io.github.sanyavertolet.jswrappers.i18next.I18n
 
@@ -22,4 +22,5 @@ private val browserLanguageDetector: dynamic = kotlinext.js.require("i18next-bro
  * @receiver The [I18n] instance to which the browser language detector will be added.
  * @return The [I18n] instance for chaining.
  */
+@Suppress("unused")
 fun I18n.useBrowserLanguageDetector() = use(browserLanguageDetector.default)

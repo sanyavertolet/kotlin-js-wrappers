@@ -1,4 +1,4 @@
-package io.github.sanyavertolet.jswrappers.i18nextHttpBackend
+package io.github.sanyavertolet.jswrappers.i18nexthttpbackend
 
 import io.github.sanyavertolet.jswrappers.i18next.json
 import io.github.sanyavertolet.jswrappers.i18next.plugins.BackendConfiguration

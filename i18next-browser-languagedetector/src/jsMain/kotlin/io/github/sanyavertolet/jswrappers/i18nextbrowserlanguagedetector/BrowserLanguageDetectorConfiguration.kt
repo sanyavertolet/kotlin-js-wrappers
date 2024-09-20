@@ -1,4 +1,4 @@
-package io.github.sanyavertolet.jswrappers.i18nextBrowserLanguageDetector
+package io.github.sanyavertolet.jswrappers.i18nextbrowserlanguagedetector
 
 import io.github.sanyavertolet.jswrappers.i18next.json
 import io.github.sanyavertolet.jswrappers.i18next.plugins.DetectionConfiguration

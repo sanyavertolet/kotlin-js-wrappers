@@ -4,12 +4,24 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/gradle/plugins" name="buildutils">
+                <projects>
+                  <project path="$PROJECT_DIR$/gradle/plugins" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/cookie" />
+            <option value="$PROJECT_DIR$/gradle/plugins" />
             <option value="$PROJECT_DIR$/i18next" />
             <option value="$PROJECT_DIR$/i18next-browser-languagedetector" />
             <option value="$PROJECT_DIR$/i18next-http-backend" />

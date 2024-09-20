@@ -1,4 +1,4 @@
-package io.github.sanyavertolet.jswrappers.reactI18next
+package io.github.sanyavertolet.jswrappers.reacti18next
 
 import io.github.sanyavertolet.jswrappers.i18next.I18n
 import io.github.sanyavertolet.jswrappers.i18next.TranslationFunction

@@ -1,6 +1,7 @@
 /**
  * File containing Json configuration
  */
+
 package io.github.sanyavertolet.jswrappers.i18next
 
 import kotlinx.serialization.json.Json

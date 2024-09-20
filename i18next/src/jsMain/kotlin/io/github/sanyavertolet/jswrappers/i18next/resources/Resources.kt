@@ -1,6 +1,9 @@
 /**
  * File containing dsl for resources configuration
  */
+
+@file:Suppress("EXTENSION_FUNCTION_WITH_CLASS")
+
 package io.github.sanyavertolet.jswrappers.i18next.resources
 
 import js.core.jso
@@ -45,6 +48,7 @@ class Resources internal constructor() {
  * Extension function to conveniently add English (`en`) language resources.
  *
  * @param languageBuilder A lambda to configure the [LanguageConfiguration] for English.
+ * @return [Unit]
  */
 @Suppress("unused")
 fun Resources.en(languageBuilder: LanguageConfiguration.() -> Unit) = language("en", languageBuilder)
@@ -53,6 +57,7 @@ fun Resources.en(languageBuilder: LanguageConfiguration.() -> Unit) = language("
  * Extension function to conveniently add German (`de`) language resources.
  *
  * @param languageBuilder A lambda to configure the [LanguageConfiguration] for German.
+ * @return [Unit]
  */
 @Suppress("unused")
 fun Resources.de(languageBuilder: LanguageConfiguration.() -> Unit) = language("de", languageBuilder)
@@ -61,6 +66,7 @@ fun Resources.de(languageBuilder: LanguageConfiguration.() -> Unit) = language("
  * Extension function to conveniently add Spanish (`es`) language resources.
  *
  * @param languageBuilder A lambda to configure the [LanguageConfiguration] for Spanish.
+ * @return [Unit]
  */
 @Suppress("unused")
 fun Resources.es(languageBuilder: LanguageConfiguration.() -> Unit) = language("es", languageBuilder)
@@ -69,6 +75,7 @@ fun Resources.es(languageBuilder: LanguageConfiguration.() -> Unit) = language("
  * Extension function to conveniently add Italian (`it`) language resources.
  *
  * @param languageBuilder A lambda to configure the [LanguageConfiguration] for Italian.
+ * @return [Unit]
  */
 @Suppress("unused")
 fun Resources.it(languageBuilder: LanguageConfiguration.() -> Unit) = language("it", languageBuilder)

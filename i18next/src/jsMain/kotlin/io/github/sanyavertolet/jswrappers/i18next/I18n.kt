@@ -54,6 +54,7 @@ external class I18n {
      * @param key The translation key to verify.
      * @return `true` if the key exists, `false` otherwise.
      */
+    @Suppress("FUNCTION_BOOLEAN_PREFIX")
     fun exists(key: String): Boolean
 
     /**
@@ -62,6 +63,7 @@ external class I18n {
      * @param key The translation key.
      * @return The translated string.
      */
+    @Suppress("IDENTIFIER_LENGTH")
     fun t(key: String): String
 
     /**
@@ -83,18 +85,12 @@ external class I18n {
      */
     @JsName("init")
     @Deprecated("Use init instead as it is type-safe", ReplaceWith("init()"))
+    @Suppress("TYPE_ALIAS")
     fun initInternal(
         configuration: dynamic,
         callback: (dynamic, dynamic) -> Unit = definedExternally,
     ): Promise<TranslationFunction>
 }
-
-/**
- * Loads the `i18next` module.
- *
- * @return The [I18n] instance from the `i18next` library.
- */
-fun requireI18next(): I18n = require("i18next")
 
 /**
  * Initializes the `i18next` instance with a type-safe configuration.
@@ -106,3 +102,10 @@ fun I18n.init(configuration: I18nConfiguration.() -> Unit): Promise<TranslationF
     @Suppress("DEPRECATION")
     return initInternal(I18nConfiguration().apply(configuration).getAsDynamic())
 }
+
+/**
+ * Loads the `i18next` module.
+ *
+ * @return The [I18n] instance from the `i18next` library.
+ */
+fun requireI18next(): I18n = require("i18next")
