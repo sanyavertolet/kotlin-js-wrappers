@@ -2,7 +2,7 @@
 
 package io.github.sanyavertolet.jswrappers.cookie
 
-import js.core.jso
+import js.objects.jso
 import kotlinext.js.require
 
 /**

@@ -34,8 +34,8 @@ import org.gradle.plugins.signing.SigningExtension
  */
 @Suppress("unused")
 fun Project.configureSigning() {
-    System.getenv("GPG_SEC")?.let { extra.set("signingKey", it) }
-    System.getenv("GPG_PASSWORD")?.let { extra.set("signingPassword", it) }
+    System.getenv("GPG_SECRET_KEY")?.let { extra.set("signingKey", it) }
+    System.getenv("GPG_PASSPHRASE")?.let { extra.set("signingPassword", it) }
     if (hasProperty("signingKey")) {
         /*
          * GitHub Actions.
@@ -114,7 +114,7 @@ fun Project.configureGitHubPublishing() {
         repositories {
             maven {
                 name = "GitHub"
-                url = uri("https://maven.pkg.github.com/sanyavertolet/jswrappers")
+                url = uri("https://maven.pkg.github.com/sanyavertolet/kotlin-js-wrappers")
                 credentials {
                     username = findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
                     password = findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
@@ -131,24 +131,36 @@ fun Project.configurePublications() {
         from(tasks.findByName("dokkaHtml"))
     }
     configure<PublishingExtension> {
-        publications.withType<MavenPublication>().configureEach {
-            artifact(dokkaJar)
-            pom {
-                name.set(project.name)
-                description.set(project.description ?: project.name)
-                url.set("https://github.com/sanyavertolet/${project.name}")
-                licenses {
-                    license {
-                        name.set("MIT License")
-                        url.set("https://opensource.org/license/MIT")
-                        distribution.set("repo")
+        publications {
+            withType<MavenPublication>().configureEach {
+                groupId = rootProject.group.toString()
+                version = project.version.toString()
+                artifactId = "${project.name}-js"
+
+                artifact(dokkaJar)
+
+                pom {
+                    name.set("${project.name}-js")
+                    description.set(project.description ?: project.name)
+                    url.set("https://sanyavertolet.github.io/kotlin-js-wrappers")
+                    licenses {
+                        license {
+                            name.set("MIT License")
+                            url.set("https://opensource.org/license/MIT")
+                            distribution.set("repo")
+                        }
                     }
-                }
-                developers {
-                    developer {
-                        id.set("sanyavertolet")
-                        name.set("Alexander Frolov")
-                        email.set("lxnfrolov@gmail.com")
+                    developers {
+                        developer {
+                            id.set("sanyavertolet")
+                            name.set("Alexander Frolov")
+                            email.set("lxnfrolov@gmail.com")
+                        }
+                    }
+                    scm {
+                        connection.set("scm:git:git://github.com/sanyavertolet/kotlin-js-wrappers.git")
+                        developerConnection.set("scm:git:ssh://github.com/sanyavertolet/kotlin-js-wrappers.git")
+                        url.set("https://github.com/sanyavertolet/kotlin-js-wrappers")
                     }
                 }
             }

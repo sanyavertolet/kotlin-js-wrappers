@@ -1,14 +1,23 @@
 package io.github.sanyavertolet.jswrappers.buildutils
 
-import org.gradle.kotlin.dsl.`maven-publish`
-import org.gradle.kotlin.dsl.signing
-
 plugins {
     `maven-publish`
     signing
+    // id("org.jreleaser")
+    id("com.vanniktech.maven.publish")
 }
 
 run {
+    tasks.assemble {
+        doFirst {
+            mkdir("${layout.buildDirectory.get()}/jreleaser")
+        }
+    }
     configureGitHubPublishing()
     configurePublications()
+    configureSigning()
+
+    // configureJReleaser()
+
+    configureMavenPublishPlugin()
 }

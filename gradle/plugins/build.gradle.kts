@@ -18,5 +18,7 @@ run {
         }
         implementation(libs.sarif4k)
         implementation(libs.publish.gradle.plugin)
+        implementation(libs.jreleaser.gradle.plugin)
+        implementation(libs.gradle.maven.publish.plugin)
     }
 }

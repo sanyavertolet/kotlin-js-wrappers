@@ -6,7 +6,6 @@ class CookieTest {
     @Test
     fun cookieObjectIsAvailable() {
         assertNotNull(cookie)
-
         cookie.set("test-key", "test-value")
         assertEquals("test-value", cookie.get("test-key"))
         cookie.remove("test-key")

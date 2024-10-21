@@ -6,7 +6,7 @@
 
 package io.github.sanyavertolet.jswrappers.i18next.resources
 
-import js.core.jso
+import js.objects.jso
 
 /**
  * Represents the `resources` configuration for `i18next`.

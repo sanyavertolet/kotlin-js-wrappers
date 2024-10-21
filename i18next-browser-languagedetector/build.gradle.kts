@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.serialization)
 
     id("io.github.sanyavertolet.jswrappers.buildutils.code-quality-convention")
+    id("io.github.sanyavertolet.jswrappers.buildutils.publishing-configuration")
 }
 
 repositories {
@@ -19,8 +20,8 @@ kotlin {
             dependencies {
                 implementation(projects.i18next)
 
-                implementation(project.dependencies.enforcedPlatform(libs.kotlin.wrappers.bom))
-                implementation("org.jetbrains.kotlin-wrappers:kotlin-extensions")
+                implementation(libs.kotlin.wrappers.kotlin.js)
+                implementation(libs.kotlin.wrappers.kotlin.extensions)
 
                 implementation(libs.kotlinx.serialization.json)
             }
