@@ -109,21 +109,6 @@ fun Project.styledOut(logCategory: String): StyledTextOutput = serviceOf<StyledT
  */
 fun Project.hasProperties(vararg propertyNames: String): Boolean = propertyNames.asSequence().all(this::hasProperty)
 
-fun Project.configureGitHubPublishing() {
-    configure<PublishingExtension> {
-        repositories {
-            maven {
-                name = "GitHub"
-                url = uri("https://maven.pkg.github.com/sanyavertolet/kotlin-js-wrappers")
-                credentials {
-                    username = findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
-                    password = findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
-                }
-            }
-        }
-    }
-}
-
 fun Project.configurePublications() {
     val dokkaJar = tasks.create<Jar>("dokkaJar") {
         group = "documentation"
@@ -140,7 +125,8 @@ fun Project.configurePublications() {
                 artifact(dokkaJar)
 
                 pom {
-                    name.set("${project.name}-js")
+                    logger.lifecycle("Configuring ${project.name} publication")
+                    name.set(project.name)
                     description.set(project.description ?: project.name)
                     url.set("https://sanyavertolet.github.io/kotlin-js-wrappers")
                     licenses {
@@ -163,6 +149,16 @@ fun Project.configurePublications() {
                         url.set("https://github.com/sanyavertolet/kotlin-js-wrappers")
                     }
                 }
+            }
+        }
+    }
+
+    afterEvaluate {
+        configure<PublishingExtension> {
+            publications.all {
+                val mavenPublication = this as? MavenPublication
+                mavenPublication?.artifactId =
+                    "${project.name}${"-$name".takeUnless { "kotlinMultiplatform" in name }.orEmpty()}"
             }
         }
     }
