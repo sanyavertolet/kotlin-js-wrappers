@@ -4,8 +4,8 @@ on:
   push:
     tags:
       - 'v*'
-    branches:
-      - master
+env:
+  GRADLE_OPTS: -Dorg.gradle.daemon=true -Dorg.gradle.parallel=true -Dorg.gradle.welcome=never
 
 jobs:
   publish:
@@ -31,10 +31,10 @@ jobs:
           ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.GPG_KEY_CONTENTS }}
 
   github_release:
-    needs: publish
-    if: ${{ startsWith(github.ref, 'refs/tags/') }}
     name: Create Github Release
     runs-on: ubuntu-latest
+    needs: publish
+    if: ${{ startsWith(github.ref, 'refs/tags/') }}
     steps:
       - name: Create Github Release
         id: create_release
