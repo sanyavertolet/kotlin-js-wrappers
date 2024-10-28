@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.dokka)
 
     id("io.github.sanyavertolet.jswrappers.buildutils.code-quality-convention")
     id("io.github.sanyavertolet.jswrappers.buildutils.publishing-configuration")
