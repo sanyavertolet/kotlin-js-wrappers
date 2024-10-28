@@ -158,7 +158,7 @@ fun Project.configurePublications() {
             publications.all {
                 val mavenPublication = this as? MavenPublication
                 mavenPublication?.artifactId =
-                    "${project.name}${"-$name".takeUnless { "kotlinMultiplatform" in name }.orEmpty()}"
+                        "${project.name}${"-$name".takeUnless { "kotlinMultiplatform" in name }.orEmpty()}"
             }
         }
     }

@@ -21,6 +21,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/cookie" />
+            <option value="$PROJECT_DIR$/custom-hooks" />
             <option value="$PROJECT_DIR$/gradle/plugins" />
             <option value="$PROJECT_DIR$/i18next" />
             <option value="$PROJECT_DIR$/i18next-browser-languagedetector" />

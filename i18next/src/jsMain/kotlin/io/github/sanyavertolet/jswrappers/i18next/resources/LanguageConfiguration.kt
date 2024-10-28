@@ -20,6 +20,7 @@ class LanguageConfiguration internal constructor() {
      * @param namespaceName The name of the namespace (e.g., "translation", "common").
      * @param namespaceBuilder A lambda with receiver [TranslationConfiguration] to build the translations.
      */
+    @Suppress("unused")
     fun ns(namespaceName: String, namespaceBuilder: TranslationConfiguration.() -> Unit) {
         namespaces[namespaceName] = TranslationConfiguration().also(namespaceBuilder)
     }

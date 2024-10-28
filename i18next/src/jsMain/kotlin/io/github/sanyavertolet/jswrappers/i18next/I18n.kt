@@ -95,12 +95,16 @@ external class I18n {
 /**
  * Initializes the `i18next` instance with a type-safe configuration.
  *
- * @param configuration A lambda to configure [I18nConfiguration].
+ * @param configurationBuilder A lambda to configure [I18nConfiguration].
  * @return A [Promise] resolving to the [TranslationFunction].
  */
-fun I18n.init(configuration: I18nConfiguration.() -> Unit): Promise<TranslationFunction> {
+fun I18n.init(configurationBuilder: I18nConfiguration.() -> Unit): Promise<TranslationFunction> {
+    val configuration = I18nConfiguration().apply(configurationBuilder).getAsDynamic()
+    configuration["backend"] = asDynamic()["backend"]
+    configuration["detection"] = asDynamic()["detection"]
+    configuration["cache"] = asDynamic()["cache"]
     @Suppress("DEPRECATION")
-    return initInternal(I18nConfiguration().apply(configuration).getAsDynamic())
+    return initInternal(configuration)
 }
 
 /**
@@ -108,4 +112,5 @@ fun I18n.init(configuration: I18nConfiguration.() -> Unit): Promise<TranslationF
  *
  * @return The [I18n] instance from the `i18next` library.
  */
+@Suppress("unused")
 fun requireI18next(): I18n = require("i18next")

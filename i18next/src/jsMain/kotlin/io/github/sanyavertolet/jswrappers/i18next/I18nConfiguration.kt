@@ -2,12 +2,7 @@
 
 package io.github.sanyavertolet.jswrappers.i18next
 
-import io.github.sanyavertolet.jswrappers.i18next.plugins.BackendConfiguration
-import io.github.sanyavertolet.jswrappers.i18next.plugins.CacheConfiguration
-import io.github.sanyavertolet.jswrappers.i18next.plugins.DetectionConfiguration
 import io.github.sanyavertolet.jswrappers.i18next.resources.Resources
-
-import kotlin.reflect.createInstance
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -333,39 +328,6 @@ class I18nConfiguration internal constructor() {
     }
 
     /**
-     * Configures the `detection` options using a dynamic object.
-     *
-     * **Warning: no type checks provided with [rawDetection], use [detection] when possible.**
-     *
-     * @param detectionObject A dynamic `detection` object.
-     */
-    fun rawDetection(detectionObject: dynamic) {
-        detection = detectionObject
-    }
-
-    /**
-     * Configures the `backend` options using a dynamic object.
-     *
-     * **Warning: no type checks provided with [rawBackend], use [backend] when possible.**
-     *
-     * @param backendObject A dynamic `backend` object.
-     */
-    fun rawBackend(backendObject: dynamic) {
-        backend = backendObject
-    }
-
-    /**
-     * Configures the `cache` options using a dynamic object.
-     *
-     * **Warning: no type checks provided with [rawCache], use [cache] when possible.**
-     *
-     * @param cacheObject A dynamic `cache` object.
-     */
-    fun rawCache(cacheObject: dynamic) {
-        cache = cacheObject
-    }
-
-    /**
      * Serializes the configuration into a `dynamic` object suitable for passing to JavaScript.
      *
      * @return A dynamic object representing the serialized configuration.
@@ -375,15 +337,6 @@ class I18nConfiguration internal constructor() {
         val configurationAsDynamic = json.encodeToDynamic(this)
         if (resources != undefined) {
             configurationAsDynamic["resources"] = resources
-        }
-        if (backend != undefined) {
-            configurationAsDynamic["backend"] = backend
-        }
-        if (cache != undefined) {
-            configurationAsDynamic["cache"] = cache
-        }
-        if (interpolation != undefined) {
-            configurationAsDynamic["interpolation"] = interpolation
         }
         if (detection != undefined) {
             configurationAsDynamic["detection"] = detection
@@ -409,34 +362,4 @@ fun I18nConfiguration.resources(resourcesBuilder: Resources.() -> Unit) {
  */
 fun I18nConfiguration.interpolation(interpolationBuilder: InterpolationConfiguration.() -> Unit) {
     rawInterpolation(InterpolationConfiguration().apply(interpolationBuilder).getAsDynamic())
-}
-
-/**
- * Configures the `backend` using [BackendConfiguration] builder.
- *
- * @param backendBuilder A lambda with a [BackendConfiguration] receiver to build the `backend` object.
- */
-@OptIn(ExperimentalJsReflectionCreateInstance::class)
-inline fun <reified T : BackendConfiguration> I18nConfiguration.backend(backendBuilder: T.() -> Unit) {
-    rawBackend(T::class.createInstance().apply(backendBuilder).getAsDynamic())
-}
-
-/**
- * Configures the `detection` using [DetectionConfiguration] builder.
- *
- * @param detectionBuilder A lambda with a [DetectionConfiguration] receiver to build the `detection` object.
- */
-@OptIn(ExperimentalJsReflectionCreateInstance::class)
-inline fun <reified T : DetectionConfiguration> I18nConfiguration.detection(detectionBuilder: T.() -> Unit) {
-    rawDetection(T::class.createInstance().apply(detectionBuilder).getAsDynamic())
-}
-
-/**
- * Configures the `cache` options using a dynamic builder.
- *
- * @param cacheBuilder A lambda with a dynamic receiver to build the cache `object`.
- */
-@OptIn(ExperimentalJsReflectionCreateInstance::class)
-inline fun <reified Cache : CacheConfiguration> I18nConfiguration.cache(cacheBuilder: Cache.() -> Unit) {
-    rawCache(Cache::class.createInstance().apply(cacheBuilder).getAsDynamic())
 }

@@ -30,6 +30,7 @@ class TranslationConfiguration internal constructor() {
      * @param key The key for the group.
      * @param innerScope A lambda with receiver [TranslationConfiguration] to define the nested translations.
      */
+    @Suppress("unused")
     fun group(key: String, innerScope: TranslationConfiguration.() -> Unit) {
         inners[key] = TranslationConfiguration().also(innerScope)
     }
@@ -40,6 +41,7 @@ class TranslationConfiguration internal constructor() {
      * @receiver The translation key.
      * @param translationString The translated string.
      */
+    @Suppress("unused")
     infix fun String.means(translationString: String) {
         translations[this] = translationString
     }
