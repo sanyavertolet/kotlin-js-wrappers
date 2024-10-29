@@ -1,5 +1,5 @@
 [versions]
-kotlin = "2.0.20"
+kotlin = "2.0.21"
 kotlin-wrappers = "1.0.0-pre.818"
 kotlin-wrappers-extensions = "1.0.1-pre.818"
 kotlinx-serialization = "1.7.3"
