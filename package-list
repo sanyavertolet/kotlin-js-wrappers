@@ -1,0 +1,15 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:cookie
+io.github.sanyavertolet.jswrappers.cookie
+module:i18next
+io.github.sanyavertolet.jswrappers.i18next
+io.github.sanyavertolet.jswrappers.i18next.plugins
+io.github.sanyavertolet.jswrappers.i18next.resources
+module:i18next-browser-languagedetector
+io.github.sanyavertolet.jswrappers.i18nextbrowserlanguagedetector
+module:i18next-http-backend
+io.github.sanyavertolet.jswrappers.i18nexthttpbackend
+module:react-i18next
+io.github.sanyavertolet.jswrappers.reacti18next

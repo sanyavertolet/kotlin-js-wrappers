@@ -1,0 +1,734 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>I18nConfiguration</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            jswrappers
+                    </a>            </div>
+            <div class="library-version">0.2.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":i18next:dokkaHtmlPartial/jsMain">js</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="i18next::io.github.sanyavertolet.jswrappers.i18next/I18nConfiguration///PointingToDeclaration//261656740">
+  <div class="breadcrumbs"><a href="../../index.html">i18next</a><span class="delimiter">/</span><a href="../index.html">io.github.sanyavertolet.jswrappers.i18next</a><span class="delimiter">/</span><span class="current">I18nConfiguration</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>I18n</span><wbr><span><span>Configuration</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">class </span><a href="index.html">I18nConfiguration</a></div><p class="paragraph">Configuration class for <code class="lang-kotlin">i18next</code> initialization.</p><p class="paragraph">This class encapsulates all the configuration options available for initializing <code class="lang-kotlin">i18next</code> in a Kotlin/JS environment.</p><p class="paragraph">It uses <code class="lang-kotlin">kotlinx-serialization</code> to serialize the configuration into a dynamic object that can be passed to the JavaScript <code class="lang-kotlin">init</code> function.</p><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div></div></span></div><div><div class="title"><p class="paragraph"><a href="https://www.i18next.com/overview/configuration-options">i18n configuration docs</a></p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1754758932%2FProperties%2F261656740" anchor-label="appendNamespaceToCIMode" id="1754758932%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="append-namespace-to-c-i-mode.html"><span>append</span><wbr><span>Namespace</span><wbr><span>To</span><wbr><span><span>CIMode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1754758932%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="append-namespace-to-c-i-mode.html">appendNamespaceToCIMode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Appends the namespace to the key when in CIMode.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1830365948%2FProperties%2F261656740" anchor-label="appendNamespaceToMissingKey" id="-1830365948%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="append-namespace-to-missing-key.html"><span>append</span><wbr><span>Namespace</span><wbr><span>To</span><wbr><span>Missing</span><wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1830365948%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="append-namespace-to-missing-key.html">appendNamespaceToMissingKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, appends the namespace to missing keys.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="138629957%2FProperties%2F261656740" anchor-label="backend" id="138629957%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="backend.html"><span><span>backend</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="138629957%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Transient///PointingToDeclaration/"><span class="token annotation builtin">Transient</span></span></div></div><span class="token keyword">var </span><a href="backend.html">backend</a><span class="token operator">: </span>dynamic</div><div class="brief "><p class="paragraph">Holds the backend configuration. This is a <code class="lang-kotlin">dynamic</code> field and is not serialized to <code class="lang-kotlin">dynamic</code> with <code class="lang-kotlin">kotlinx-serialization</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1616259351%2FProperties%2F261656740" anchor-label="cache" id="1616259351%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cache.html"><span><span>cache</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1616259351%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Transient///PointingToDeclaration/"><span class="token annotation builtin">Transient</span></span></div></div><span class="token keyword">var </span><a href="cache.html">cache</a><span class="token operator">: </span>dynamic</div><div class="brief "><p class="paragraph">Holds the cache configuration. This is a <code class="lang-kotlin">dynamic</code> field and is not serialized to <code class="lang-kotlin">dynamic</code> with <code class="lang-kotlin">kotlinx-serialization</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1915919037%2FProperties%2F261656740" anchor-label="cleanCode" id="-1915919037%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="clean-code.html"><span>clean</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1915919037%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="clean-code.html">cleanCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, cleans the language code.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-823735701%2FProperties%2F261656740" anchor-label="contextSeparator" id="-823735701%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="context-separator.html"><span>context</span><wbr><span><span>Separator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-823735701%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="context-separator.html">contextSeparator</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Separator used for contexts.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="37871462%2FProperties%2F261656740" anchor-label="debug" id="37871462%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="debug.html"><span><span>debug</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="37871462%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="debug.html">debug</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Enables debug mode if set to <code class="lang-kotlin">true</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1848711993%2FProperties%2F261656740" anchor-label="defaultNamespace" id="-1848711993%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="default-namespace.html"><span>default</span><wbr><span><span>Namespace</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1848711993%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/SerialName///PointingToDeclaration/"><span class="token annotation builtin">SerialName</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"defaultNS"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">var </span><a href="default-namespace.html">defaultNamespace</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Default namespace used if not specified in the translation function.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1805039988%2FProperties%2F261656740" anchor-label="detection" id="1805039988%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="detection.html"><span><span>detection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1805039988%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Transient///PointingToDeclaration/"><span class="token annotation builtin">Transient</span></span></div></div><span class="token keyword">var </span><a href="detection.html">detection</a><span class="token operator">: </span>dynamic</div><div class="brief "><p class="paragraph">Holds the detection configuration. This is a <code class="lang-kotlin">dynamic</code> field and is not serialized to <code class="lang-kotlin">dynamic</code> with <code class="lang-kotlin">kotlinx-serialization</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1977112441%2FProperties%2F261656740" anchor-label="fallbackLanguage" id="-1977112441%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fallback-language.html"><span>fallback</span><wbr><span><span>Language</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1977112441%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/SerialName///PointingToDeclaration/"><span class="token annotation builtin">SerialName</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"fallbackLng"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">var </span><a href="fallback-language.html">fallbackLanguage</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Fallback language if the specified language is not available. Defaults to <code class="lang-kotlin">"dev"</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1847191783%2FProperties%2F261656740" anchor-label="fallbackNamespaces" id="1847191783%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fallback-namespaces.html"><span>fallback</span><wbr><span><span>Namespaces</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1847191783%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/SerialName///PointingToDeclaration/"><span class="token annotation builtin">SerialName</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"fallbackNS"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">var </span><a href="fallback-namespaces.html">fallbackNamespaces</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of fallback namespaces.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2063169216%2FProperties%2F261656740" anchor-label="ignoreJsonStructure" id="2063169216%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ignore-json-structure.html"><span>ignore</span><wbr><span>Json</span><wbr><span><span>Structure</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2063169216%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="ignore-json-structure.html">ignoreJsonStructure</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, ignores the JSON structure when flattening translations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-858610440%2FProperties%2F261656740" anchor-label="initImmediate" id="-858610440%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="init-immediate.html"><span>init</span><wbr><span><span>Immediate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-858610440%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="init-immediate.html">initImmediate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">false</code>, initialization is delayed until resources are loaded.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-399373003%2FProperties%2F261656740" anchor-label="interpolation" id="-399373003%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interpolation.html"><span><span>interpolation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-399373003%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Transient///PointingToDeclaration/"><span class="token annotation builtin">Transient</span></span></div></div><span class="token keyword">var </span><a href="interpolation.html">interpolation</a><span class="token operator">: </span>dynamic</div><div class="brief "><p class="paragraph">Holds the interpolation configuration. This is a <code class="lang-kotlin">dynamic</code> field and is not serialized to <code class="lang-kotlin">dynamic</code> with <code class="lang-kotlin">kotlinx-serialization</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1997318115%2FProperties%2F261656740" anchor-label="joinArrays" id="-1997318115%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="join-arrays.html"><span>join</span><wbr><span><span>Arrays</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1997318115%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="join-arrays.html">joinArrays</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Specifies how to join arrays in translations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1116563173%2FProperties%2F261656740" anchor-label="keySeparator" id="-1116563173%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="key-separator.html"><span>key</span><wbr><span><span>Separator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1116563173%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="key-separator.html">keySeparator</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Separator used for keys.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="397348681%2FProperties%2F261656740" anchor-label="language" id="397348681%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="language.html"><span><span>language</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="397348681%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/SerialName///PointingToDeclaration/"><span class="token annotation builtin">SerialName</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"lng"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">var </span><a href="language.html">language</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Specifies the initial language to load.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1660444344%2FProperties%2F261656740" anchor-label="loadStrategy" id="-1660444344%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="load-strategy.html"><span>load</span><wbr><span><span>Strategy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1660444344%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/SerialName///PointingToDeclaration/"><span class="token annotation builtin">SerialName</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"load"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">var </span><a href="load-strategy.html">loadStrategy</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Strategy for loading resources.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1976764739%2FProperties%2F261656740" anchor-label="lowerCaseLanguageCode" id="1976764739%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lower-case-language-code.html"><span>lower</span><wbr><span>Case</span><wbr><span>Language</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1976764739%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/SerialName///PointingToDeclaration/"><span class="token annotation builtin">SerialName</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"lowerCaseLng"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">var </span><a href="lower-case-language-code.html">lowerCaseLanguageCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, language codes are converted to lower case.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1171101937%2FProperties%2F261656740" anchor-label="maxParallelReads" id="-1171101937%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-parallel-reads.html"><span>max</span><wbr><span>Parallel</span><wbr><span><span>Reads</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1171101937%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="max-parallel-reads.html">maxParallelReads</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Maximum number of parallel reads when loading resources.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2027414410%2FProperties%2F261656740" anchor-label="missingKeyNoValueFallbackToKey" id="-2027414410%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="missing-key-no-value-fallback-to-key.html"><span>missing</span><wbr><span>Key</span><wbr><span>No</span><wbr><span>Value</span><wbr><span>Fallback</span><wbr><span>To</span><wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2027414410%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="missing-key-no-value-fallback-to-key.html">missingKeyNoValueFallbackToKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, falls back to the key if no value is found and the key is missing.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1218271447%2FProperties%2F261656740" anchor-label="namespaces" id="-1218271447%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="namespaces.html"><span><span>namespaces</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1218271447%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/SerialName///PointingToDeclaration/"><span class="token annotation builtin">SerialName</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"ns"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">var </span><a href="namespaces.html">namespaces</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of namespaces to load.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1714317801%2FProperties%2F261656740" anchor-label="namespaceSeparator" id="-1714317801%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="namespace-separator.html"><span>namespace</span><wbr><span><span>Separator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1714317801%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="namespace-separator.html">namespaceSeparator</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Separator used for namespaces.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="128165131%2FProperties%2F261656740" anchor-label="nonExplicitSupportedLanguages" id="128165131%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="non-explicit-supported-languages.html"><span>non</span><wbr><span>Explicit</span><wbr><span>Supported</span><wbr><span><span>Languages</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="128165131%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="non-explicit-supported-languages.html">nonExplicitSupportedLanguages</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, non-explicit supported languages are allowed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1139650849%2FProperties%2F261656740" anchor-label="partialBundledLanguages" id="-1139650849%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="partial-bundled-languages.html"><span>partial</span><wbr><span>Bundled</span><wbr><span><span>Languages</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1139650849%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="partial-bundled-languages.html">partialBundledLanguages</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, partially bundles languages.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-83617096%2FProperties%2F261656740" anchor-label="pluralSeparator" id="-83617096%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="plural-separator.html"><span>plural</span><wbr><span><span>Separator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-83617096%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="plural-separator.html">pluralSeparator</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Separator used for plurals.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2108892810%2FProperties%2F261656740" anchor-label="postProcess" id="2108892810%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="post-process.html"><span>post</span><wbr><span><span>Process</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2108892810%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="post-process.html">postProcess</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of post-processing steps.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2012100240%2FProperties%2F261656740" anchor-label="preload" id="-2012100240%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="preload.html"><span><span>preload</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2012100240%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="preload.html">preload</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">List of languages to preload.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-70933593%2FProperties%2F261656740" anchor-label="returnDetails" id="-70933593%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="return-details.html"><span>return</span><wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-70933593%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="return-details.html">returnDetails</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, returns detailed information for missing translations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1688420267%2FProperties%2F261656740" anchor-label="returnEmptyString" id="1688420267%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="return-empty-string.html"><span>return</span><wbr><span>Empty</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1688420267%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="return-empty-string.html">returnEmptyString</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, returns an empty string for missing translations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2030602326%2FProperties%2F261656740" anchor-label="returnNull" id="-2030602326%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="return-null.html"><span>return</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2030602326%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="return-null.html">returnNull</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, returns <code class="lang-kotlin">null</code> for missing translations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1531003157%2FProperties%2F261656740" anchor-label="returnObjects" id="1531003157%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="return-objects.html"><span>return</span><wbr><span><span>Objects</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1531003157%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="return-objects.html">returnObjects</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, returns objects instead of strings for missing translations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1673636944%2FProperties%2F261656740" anchor-label="saveMissing" id="1673636944%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="save-missing.html"><span>save</span><wbr><span><span>Missing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1673636944%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="save-missing.html">saveMissing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, missing keys are sent to the backend.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1278162267%2FProperties%2F261656740" anchor-label="saveMissingPlurals" id="1278162267%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="save-missing-plurals.html"><span>save</span><wbr><span>Missing</span><wbr><span><span>Plurals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1278162267%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="save-missing-plurals.html">saveMissingPlurals</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, saves missing plurals.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="758537557%2FProperties%2F261656740" anchor-label="saveMissingTo" id="758537557%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="save-missing-to.html"><span>save</span><wbr><span>Missing</span><wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="758537557%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="save-missing-to.html">saveMissingTo</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Specifies where to save missing keys.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1591777684%2FProperties%2F261656740" anchor-label="skipInterpolation" id="1591777684%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="skip-interpolation.html"><span>skip</span><wbr><span><span>Interpolation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1591777684%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="skip-interpolation.html">skipInterpolation</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, skips interpolation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-137055180%2FProperties%2F261656740" anchor-label="supportedLanguages" id="-137055180%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="supported-languages.html"><span>supported</span><wbr><span><span>Languages</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-137055180%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/SerialName///PointingToDeclaration/"><span class="token annotation builtin">SerialName</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"supportedLngs"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">var </span><a href="supported-languages.html">supportedLanguages</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">List of supported languages.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="427031708%2FProperties%2F261656740" anchor-label="updateMissing" id="427031708%2FProperties%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-missing.html"><span>update</span><wbr><span><span>Missing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="427031708%2FProperties%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="update-missing.html">updateMissing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If <code class="lang-kotlin">true</code>, updates missing keys.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-2086424438%2FFunctions%2F261656740" anchor-label="getAsDynamic" id="-2086424438%2FFunctions%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-as-dynamic.html"><span>get</span><wbr><span>As</span><wbr><span><span>Dynamic</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2086424438%2FFunctions%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-as-dynamic.html"><span class="token function">getAsDynamic</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>dynamic</div><div class="brief "><p class="paragraph">Serializes the configuration into a <code class="lang-kotlin">dynamic</code> object suitable for passing to JavaScript.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-108924070%2FFunctions%2F261656740" anchor-label="interpolation" id="-108924070%2FFunctions%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../interpolation.html"><span><span>interpolation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-108924070%2FFunctions%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">I18nConfiguration</a><span class="token punctuation">.</span><a href="../interpolation.html"><span class="token function">interpolation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">interpolationBuilder<span class="token operator">: </span><a href="../-interpolation-configuration/index.html">InterpolationConfiguration</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Configures the <code class="lang-kotlin">interpolation</code> using <a href="../-interpolation-configuration/index.html">InterpolationConfiguration</a> builder.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-7097978%2FFunctions%2F261656740" anchor-label="rawInterpolation" id="-7097978%2FFunctions%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="raw-interpolation.html"><span>raw</span><wbr><span><span>Interpolation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-7097978%2FFunctions%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="raw-interpolation.html"><span class="token function">rawInterpolation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">interpolationObject<span class="token operator">: </span>dynamic</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Configures the <code class="lang-kotlin">interpolation</code> options using a dynamic builder.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-853210267%2FFunctions%2F261656740" anchor-label="rawResources" id="-853210267%2FFunctions%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="raw-resources.html"><span>raw</span><wbr><span><span>Resources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-853210267%2FFunctions%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="raw-resources.html"><span class="token function">rawResources</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resourcesObject<span class="token operator">: </span>dynamic</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Configures the <code class="lang-kotlin">resources</code> (translations) using a dynamic object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2109921243%2FFunctions%2F261656740" anchor-label="resources" id="-2109921243%2FFunctions%2F261656740" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":i18next:dokkaHtmlPartial/jsMain" data-filterable-set=":i18next:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../resources.html"><span><span>resources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2109921243%2FFunctions%2F261656740"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18next:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">I18nConfiguration</a><span class="token punctuation">.</span><a href="../resources.html"><span class="token function">resources</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resourcesBuilder<span class="token operator">: </span><a href="../../io.github.sanyavertolet.jswrappers.i18next.resources/-resources/index.html">Resources</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Configures the <code class="lang-kotlin">resources</code> (translations) using <a href="../../io.github.sanyavertolet.jswrappers.i18next.resources/-resources/index.html">Resources</a> builder.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
