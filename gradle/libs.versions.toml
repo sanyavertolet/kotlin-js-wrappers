@@ -2,7 +2,7 @@
 kotlin = "2.0.20"
 kotlin-wrappers = "1.0.0-pre.818"
 kotlin-wrappers-extensions = "1.0.1-pre.818"
-kotlinx-serialization = "1.7.2"
+kotlinx-serialization = "1.7.3"
 detekt = "1.23.6"
 reckon = "0.18.3"
 diktat = "2.0.0"
