@@ -1,6 +1,6 @@
 [versions]
 kotlin = "2.0.21"
-kotlin-wrappers = "1.0.0-pre.821"
+kotlin-wrappers = "1.0.0-pre.828"
 kotlin-wrappers-extensions = "1.0.1-pre.821"
 kotlinx-serialization = "1.7.3"
 detekt = "1.23.6"
